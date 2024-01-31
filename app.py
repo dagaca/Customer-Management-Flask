@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 # Database connection parameters
 db_params = {
-    'dbname': 'dbname',
-    'user': 'user',
-    'password': 'password',
-    'host': 'host',
-    'port': 'port'
+    'dbname': 'your_database_name',
+    'user': 'your_username',
+    'password': 'your_password',
+    'host': 'your_host',
+    'port': 'your_port'
 }
 
 def connect_to_database():
