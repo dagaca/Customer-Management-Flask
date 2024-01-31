@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Customer List</title>
+</head>
+<body>
+    <h1>Customer List</h1>
+
+    <form method="get" action="/">
+        <label for="filter_by">Filter:</label>
+        <input type="text" name="filter_by" value="{{ filter_by }}">
+        <input type="submit" value="Filter">
+    </form>
+
+    <table border="1">
+        <tr>
+            <th><a href="?order_by=id&filter_by={{ filter_by }}&page=1">ID</a></th>
+            <th><a href="?order_by=name&filter_by={{ filter_by }}&page=1">Name</a></th>
+            <th><a href="?order_by=email&filter_by={{ filter_by }}&page=1">Email</a></th>
+            <th><a href="?order_by=phone&filter_by={{ filter_by }}&page=1">Phone</a></th>
+            <th><a href="?order_by=notes&filter_by={{ filter_by }}&page=1">Notes</a></th>
+        </tr>
+        {% for customer in customers %}
+            <tr>
+                <td>{{ customer[0] }}</td>
+                <td>{{ customer[1] }}</td>
+                <td>{{ customer[2] }}</td>
+                <td>{{ customer[3] }}</td>
+                <td>{{ customer[4] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+	<div class="pagination">
+		{% if page > 1 %}
+			<a href="?order_by={{ order_by }}&filter_by={{ filter_by }}&page=1">First Page</a>
+			<a href="?order_by={{ order_by }}&filter_by={{ filter_by }}&page={{ page - 1 }}">Previous</a>
+		{% endif %}
+		
+		{% for p in range(1, total_pages + 1) %}
+			<a href="?order_by={{ order_by }}&filter_by={{ filter_by }}&page={{ p }}" {% if p == page %}style="background-color: #45a049;"{% endif %}>{{ p }}</a>
+		{% endfor %}
+
+		{% if page < total_pages %}
+			<a href="?order_by={{ order_by }}&filter_by={{ filter_by }}&page={{ page + 1 }}">Next</a>
+			<a href="?order_by={{ order_by }}&filter_by={{ filter_by }}&page={{ total_pages }}">Last Page</a>
+		{% endif %}
+	</div>
+
+
+    <br>
+    <a href="/add_customer" class="add-customer-button">Add Customer</a>
+</body>
+</html>
