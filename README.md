@@ -8,6 +8,7 @@ Bu Flask uygulaması, müşteri bilgilerini yönetmeyi amaçlamaktadır.
 Customer-Management-Flask/
 
 │
+
 ├── static/
 
 │ ├── css/
