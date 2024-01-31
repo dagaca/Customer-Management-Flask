@@ -81,7 +81,7 @@ Customer-Management-Flask/
 
 ## Veritabanı Ayarları
 
-Bu projede, PostgreSQL veritabanı kullanılmaktadır. Veritabanı bağlantı ayarları `app.py` dosyasında `db_params` değişkeni içinde belirtilmiştir. Bu bilgileri kendi PostgreSQL ve pgAdmin kurulumunuza uygun şekilde düzenlemelisiniz.
+Bu projede, PostgreSQL veritabanı kullanılmaktadır. Veritabanı bağlantı ayarları `app.py` dosyasında `db_params` değişkeni içinde belirtilmiştir. Bu bilgileri kendi PostgreSQL kurulumunuza uygun şekilde düzenlemelisiniz.
 
 ```python
 # Database connection parameters
@@ -99,7 +99,7 @@ db_params = {
 
 ## Sistem Çalışma Videosu
 
-Projenin çalışma şeklini detaylı bir şekilde gösteren bir videoyu aşağıda bulabilirsiniz.
+Projenin çalışma şeklini detaylı bir şekilde gösteren videoyu aşağıda bulabilirsiniz.
 
 
 https://github.com/dagaca/Customer-Management-Flask/assets/80363244/cc5706fc-3133-4be2-b035-eadb326f60d6
