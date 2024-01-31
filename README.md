@@ -97,5 +97,13 @@ db_params = {
 - Yukarıdaki parametreleri kendi PostgreSQL kurulumunuzun bilgileriyle güncelleyin. Örneğin, your_database_name kısmına oluşturduğunuz veritabanının adını, your_username kısmına PostgreSQL kullanıcı adınızı, your_password kısmına şifrenizi, your_host kısmına PostgreSQL sunucu adresinizi, ve your_port kısmına PostgreSQL'in çalıştığı port numarasını ekleyin.
 
 
+## Sistem Çalışma Videosu
+
+Projenin çalışma şeklini detaylı bir şekilde gösteren bir videoyu aşağıda bulabilirsiniz.
+
+
+https://github.com/dagaca/Customer-Management-Flask/assets/80363244/cc5706fc-3133-4be2-b035-eadb326f60d6
+
+
 ## Katkıda Bulunma
 Eğer bu projeye katkıda bulunmak istiyorsanız, lütfen forklayın ve pull request gönderin.
