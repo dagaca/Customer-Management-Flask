@@ -1,6 +1,6 @@
 # Customer-Management-Flask
 
-Bu Flask uygulaması, müşteri bilgilerini yönetmeyi amaçlamaktadır.
+Bu repoda bulunan Flask uygulaması, müşteri bilgilerini yönetmeyi amaçlamaktadır.
 
 
 ## Proje Ağacı
