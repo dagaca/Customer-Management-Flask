@@ -1,21 +1,36 @@
 # Customer-Management-Flask
+
 Bu Flask uygulaması, müşteri bilgilerini yönetmeyi amaçlamaktadır.
+
 
 ## Proje Ağacı
 
 Customer-Management-Flask/
+
 │
+
 ├── static/
+
 │ ├── css/
+
 │ │ └── style.css
+
 │
+
 ├── templates/
+
 │ └── customer_list.html
+
 │ └── add_customer.html
+
 │
+
 ├── README.md
+
 ├── app.py
+
 ├── requirements.txt
+
 
 ## Kurulum
 
@@ -57,10 +72,12 @@ Customer-Management-Flask/
     pip install -r requirements.txt
     ```
 
+
 ## Kullanım
 
 - Ana sayfada müşteri listesini görüntüleyebilir ve sıralayabilirsiniz.
 - "Add Customer" sayfasından yeni müşteri ekleyebilirsiniz.
+
 
 ## Veritabanı Ayarları
 
@@ -78,6 +95,7 @@ db_params = {
 ```
 
 - Yukarıdaki parametreleri kendi PostgreSQL kurulumunuzun bilgileriyle güncelleyin. Örneğin, your_database_name kısmına oluşturduğunuz veritabanının adını, your_username kısmına PostgreSQL kullanıcı adınızı, your_password kısmına şifrenizi, your_host kısmına PostgreSQL sunucu adresinizi, ve your_port kısmına PostgreSQL'in çalıştığı port numarasını ekleyin.
+
 
 ## Katkıda Bulunma
 Eğer bu projeye katkıda bulunmak istiyorsanız, lütfen forklayın ve pull request gönderin.
